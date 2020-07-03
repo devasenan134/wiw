@@ -21,6 +21,7 @@
         <h5 class="card-title">{{ video.title|truncatechars:30 }}</h5>
         <p class="card-text">{{ video.description|truncatechars:100 }}</p>
         <a href="{% url 'blog' %}" class="btn btn-primary">Explore more</a>
+        <br><br>
         <!--/div-->
     </div>
     {% endfor %}
