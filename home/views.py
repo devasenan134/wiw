@@ -4,11 +4,7 @@ from .models import Video
 # Create your views here.
 
 def home(request):
-    videos = Video.objects.all()
-
+    data = Video.objects.all()
     return render(request, "home/home.html", {
-        "videos": videos
+        "videos": data
     })
-
-def blog(request):
-    pass
